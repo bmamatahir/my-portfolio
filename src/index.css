@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animated-border {
+    animation: border-animation 30s infinite;
+    border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
+}
+
+@keyframes border-animation {
+    0%,
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+    }
+
+    10% {
+        border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+    }
+
+    20% {
+        border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+    }
+
+    30% {
+        border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+    }
+
+    40% {
+        border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+    }
+
+    50% {
+        border-radius: 100%;
+    }
+
+    60% {
+        border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+    }
+
+    70% {
+        border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+    }
+
+    80% {
+        border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+    }
+
+    90% {
+        border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+    }
+}
+
+
+.gradient-border {
+    --border-width: 3px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: var(--border-width);
+}
+
+.gradient-border::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+}

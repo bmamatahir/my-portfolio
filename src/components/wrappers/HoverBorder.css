@@ -1,0 +1,76 @@
+:root {
+    --bx-w: 35px;
+    --bx-h: 35px;
+}
+
+.bx {
+    width: var(--bx-w);
+    height: var(--bx-h);
+    position: relative;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 3px #2c3e50;
+    -webkit-transition: background 0.4s 0.5s;
+    transition: background 0.4s 0.5s;
+}
+
+.bx:hover {
+    background: rgba(255, 255, 255, 0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+.bx:hover > * {
+    color: #fff;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.bx > svg:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bx > svg:first-child line {
+    stroke-width: 3;
+    stroke: #ecf0f1;
+    fill: none;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+.bx:hover svg line {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.bx > svg:first-child line.top,
+.bx > svg:first-child line.bottom {
+    stroke-dasharray: 330 240;
+}
+
+.bx > svg:first-child line.left,
+.bx > svg:first-child line.right {
+    stroke-dasharray: 490 400;
+}
+
+.bx:hover svg line.top {
+    -webkit-transform: translateX(-600px);
+    transform: translateX(-600px);
+}
+
+.bx:hover svg line.bottom {
+    -webkit-transform: translateX(600px);
+    transform: translateX(600px);
+}
+
+.bx:hover svg line.left {
+    -webkit-transform: translateY(920px);
+    transform: translateY(920px);
+}
+
+.bx:hover svg line.right {
+    -webkit-transform: translateY(-920px);
+    transform: translateY(-920px);
+}
