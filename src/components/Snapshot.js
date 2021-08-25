@@ -34,11 +34,7 @@ const Snapshot = () => {
     }, [])
 
     return (
-        <div id="snapshot-card"
-             className="mx-auto p-3 rounded-lg border animated-border h-96 w-96 flex flex-col justify-center items-center">
-
-
-
+        <div id="snapshot-card" className="mx-auto p-3 rounded-lg border animated-border h-96 w-96 flex flex-col justify-center items-center">
 
             <img src={avatar} alt="avatar"
                  className={" w-28 h-28 mb-4 rounded-full ring-2 ring-yellow-500 ring-opacity-50 p-1"}/>
