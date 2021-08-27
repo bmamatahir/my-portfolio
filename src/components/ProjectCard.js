@@ -1,7 +1,7 @@
 import React from 'react';
 import {AiFillGithub, FiExternalLink} from "react-icons/all";
-import Budge, {ProjectStatus} from "./Budge";
-import Technology, {Technologies} from "./Technology";
+import Budge from "./Budge";
+import Technology from "./Technology";
 import AutoScrollingBackground from "./AutoScrollingBackground";
 
 const ProjectCard = (props) => {
@@ -22,7 +22,8 @@ const ProjectCard = (props) => {
 
     return (
         <div
-            className="ProjectCard border rounded-2xl shadow-md ProjectCard-size overflow-hidden grid grid-cols-3 max-w-4xl" style={{minHeight: '300px', borderColor: color}}>
+            className="Tilt-inner ProjectCard border rounded-2xl shadow-md ProjectCard-size overflow-hidden grid grid-cols-3 max-w-4xl"
+            style={{minHeight: '300px', borderColor: color}}>
 
             {/*Left*/}
             <div className="col-span-3 sm:col-span-2 overflow-hidden">
@@ -79,9 +80,9 @@ const ProjectCard = (props) => {
 
                 {/*Github*/}
                 {github &&
-                    <div className="absolute bottom-3 right-3 hidden sm:block bg-black p-1 rounded-full bg-opacity-50">
-                        <a href={github} target="_blank"><AiFillGithub size={30} color="white"/></a>
-                    </div>
+                <div className="absolute bottom-3 right-3 hidden sm:block bg-black p-1 rounded-full bg-opacity-50">
+                    <a href={github} target="_blank"><AiFillGithub size={30} color="white"/></a>
+                </div>
                 }
             </div>
 

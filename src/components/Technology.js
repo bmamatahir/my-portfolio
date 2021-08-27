@@ -14,6 +14,7 @@ export const Technologies = {
     Cordova: {label: 'Cordova', color: '#4C5562'},
     Ionic: {label: 'Ionic', color: '#4786F7'},
     jQuery: {label: 'jQuery', color: '#0B66A9'},
+    jQueryUI: {label: 'jQuery UI', color: '#F2A022'},
     WordPress: {label: 'WordPress', color: '#007095'},
     Bootstrap: {label: 'Bootstrap', color: '#6E12EF'},
     Tailwind: {label: 'Tailwind', color: '#0CA4B2'},
@@ -21,6 +22,12 @@ export const Technologies = {
     CMI: {label: 'CMI Payment gateway', color: '#EE4230'},
     ThreeJs: {label: 'ThreeJs', color: '#403D7E'},
     RxJs: {label: 'RxJs', color: '#A1008D'},
+    AJAX: {label: 'AJAX', color: '#0780C6'},
+    AngularMaterialUI: {label: 'AngularMaterialUI', color: '#F38800'},
+    GoogleMaps: {label: 'Google Maps', color: '#32A34F'},
+    IoT: {label: 'IoT', color: '#57514F'},
+    PayPal: {label: 'PayPal', color: '#002E82'},
+    Docker: {label: 'Docker', color: '#1993EF'},
 
 
     /* Programing Languages */
@@ -36,6 +43,7 @@ export const Technologies = {
     MongoDB: {label: 'MongoDB', color: '#52A74B'},
     MySql: {label: 'Mysql', color: '#E48D06'},
     SqLite: {label: 'SqLite', color: '#379BD9'},
+
 
 };
 

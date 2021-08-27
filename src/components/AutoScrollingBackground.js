@@ -5,9 +5,14 @@ const AutoScrollingBackground = ({src}) => {
     let ref = null;
 
     useEffect(function(){
-        ref = setInterval(()=> {
-            setYPos(++yPos)
-        }, 100)
+        let img = new Image();
+        img.src = src;
+        img.onload = () =>{
+            if(img.height > 350)
+                ref = setInterval(()=> {
+                    setYPos(++yPos)
+                }, 100)
+        };
 
         return stopAnimation
     },[])

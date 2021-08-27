@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectCard from "./ProjectCard";
 import {projects} from "../data/constants";
+import Tilt from "react-tilt/dist/tilt";
 
 const Projects = (props) => {
     return (
@@ -12,8 +13,13 @@ const Projects = (props) => {
                         titles and their statuses</p>
                 </div>
 
-                <div className="grid gap-4 grid-cols-2">
-                    {projects.filter(e => !e.hidden).map((p, index) => <ProjectCard key={index} data={p}/>)}
+                <div className="grid gap-4 grid-cols-1 lg:grid-cols-2">
+                    {projects.filter(e => !e.hidden).map((p, index) => <Tilt className="Tilt" options={{
+                        max: 10,
+                        perspective: 2000,
+                        scale: 1
+                    }}>
+                        <ProjectCard key={index} data={p}/></Tilt>)}
                 </div>
             </div>
         </div>
