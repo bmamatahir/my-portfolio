@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
 .animated-border {
     animation: border-animation 30s infinite;
     border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;

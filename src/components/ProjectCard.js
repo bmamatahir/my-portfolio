@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState} from 'react';
 import {AiFillGithub, FiExternalLink} from "react-icons/all";
 import Budge from "./Budge";
 import Technology from "./Technology";
@@ -18,7 +18,15 @@ const ProjectCard = (props) => {
         github,
     } = props.data;
 
-    console.log(props.data);
+    const descLen = 380
+
+    const longDesc = description.length > descLen;
+
+    const [collapsed, setCollapsed] = useState(true);
+
+    const toggleReadMore = () => {
+        setCollapsed(() => !collapsed);
+    };
 
     return (
         <div
@@ -28,9 +36,11 @@ const ProjectCard = (props) => {
             {/*Left*/}
             <div className="col-span-3 sm:col-span-2 overflow-hidden">
                 <div className="p-5 flex flex-col gap-3 h-full bg-white relative">
-                    <div className="absolute  top-0 right-8">
-                        <Budge {...status}/>
-                    </div>
+                    {
+                        !github && <div className="absolute  top-0 right-8">
+                            <Budge {...status}/>
+                        </div>
+                    }
 
                     {/*Logo*/}
                     <div>
@@ -43,14 +53,18 @@ const ProjectCard = (props) => {
                         <div className="flex gap-1 items-center mb-2">
                             <h1 className="font-bold text-lg">{name}</h1>
                             {
-                                visitLink  &&
+                                visitLink &&
                                 <a href={visitLink} target="_blank">
                                     <FiExternalLink color="#547bd2"/>
                                 </a>
                             }
 
                         </div>
-                        <p className="leading-tight text-gray-600">{description}</p>
+                        <p className="leading-tight text-gray-600">
+                            {description.substr(0, collapsed ? descLen: description.length)}
+                            { longDesc && collapsed &&  <span>...</span>}
+                            {longDesc && <span className="text-blue-600 hover:text-blue-400 font-semibold cursor-pointer" onClick={toggleReadMore}>[{ collapsed ? 'More' : 'Less'}]</span>}
+                        </p>
                     </div>
 
                     {/*Technologies*/}
@@ -62,9 +76,9 @@ const ProjectCard = (props) => {
 
                     {/*Github*/}
                     {github &&
-                        <div className="absolute bottom-3 right-3 opacity-30 sm:hidden">
-                            <a href={github} target="_blank"><AiFillGithub size={30}/></a>
-                        </div>
+                    <div className="absolute bottom-3 right-3 opacity-30 sm:hidden">
+                        <a href={github} target="_blank"><AiFillGithub size={30}/></a>
+                    </div>
                     }
 
 

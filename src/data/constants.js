@@ -13,7 +13,7 @@ export const projects = [
         status: ProjectStatus.Active,
         name: 'Spotbusiness',
         visitLink: 'https://spotbusiness.ma',
-        technologies: [Technologies.Laravel, Technologies.Livewire, Technologies.Odoo, Technologies.CMI],
+        technologies: [Technologies.Laravel, Technologies.Livewire,  Technologies.AlpineJs, Technologies.Odoo, Technologies.CMI],
         github: null,
         color: '#3c57e0',
         description: `
@@ -23,21 +23,6 @@ export const projects = [
             I built and maintained the app from idea to production. In addition, The website respects SEO norms to generate the traffic and well recognized in search engine.
         `,
         screenshots: loadImage('spotbusiness', 'screenshots'),
-        hidden: false,
-    },
-    {
-        logo: loadImage('spotbills', 'logo'),
-        status: ProjectStatus.Active,
-        name: 'Spotbills',
-        visitLink: 'https://spotbills.com',
-        technologies: [Technologies.Angular, Technologies.ThreeJs, Technologies.RxJs],
-        github: null,
-        color: '#FFCD65',
-        description: `
-            A static website describe the company products and services in creative manner with the power of Three.js. 
-            We developed a 3D world and a smart smooth UX, and we toke advantage of Angular as front-end to enhance user interactivity and website performance.
-        `,
-        screenshots: loadImage('spotbills', 'screenshots'),
         hidden: false,
     },
     {
@@ -53,6 +38,21 @@ export const projects = [
             The application allows customers to explore gyms and pay passes with multiple methods of payment. 
             The app is hybrid and the code has been written inside Angular framework and wrapped withing a Cordova webview to target multiple platform especially Android and IOS systems.  
         `,
+        hidden: false,
+    },
+    {
+        logo: loadImage('spotbills', 'logo'),
+        status: ProjectStatus.Active,
+        name: 'Spotbills',
+        visitLink: 'https://spotbills.com',
+        technologies: [Technologies.Angular, Technologies.ThreeJs, Technologies.RxJs],
+        github: null,
+        color: '#FFCD65',
+        description: `
+            A static website describe the company products and services in creative manner with the power of Three.js. 
+            We developed a 3D world and a smart smooth UX, and we toke advantage of Angular as front-end to enhance user interactivity and website performance.
+        `,
+        screenshots: loadImage('spotbills', 'screenshots'),
         hidden: false,
     },
     {
@@ -87,6 +87,21 @@ export const projects = [
         hidden: false,
     },
     {
+        logo: loadImage('satfleet', 'logo'),
+        status: ProjectStatus.Active,
+        name: 'Satfleet',
+        visitLink: 'https://www.satfleet.ma/',
+        technologies: [Technologies.PHP, Technologies.Javascript, Technologies.NodeJs, Technologies.GoogleMaps, Technologies.IoT],
+        color: '#252A38',
+        github: null,
+        screenshots: loadImage('satfleet', 'screenshots'),
+        description: `
+            Fleet management platform that enable us to monitor vehicles in real time on Map view, 
+            tracking the hardware status and control them remotely using IOT Technology.  
+        `,
+        hidden: false,
+    },
+    {
         logo: loadImage('OMS', 'logo'),
         status: ProjectStatus.Active,
         name: 'Opentech management system',
@@ -105,21 +120,6 @@ export const projects = [
         hidden: false,
     },
     {
-        logo: loadImage('satfleet', 'logo'),
-        status: ProjectStatus.Active,
-        name: 'Satfleet',
-        visitLink: 'https://www.satfleet.ma/',
-        technologies: [Technologies.PHP, Technologies.Javascript, Technologies.NodeJs, Technologies.GoogleMaps, Technologies.IoT],
-        color: '#252A38',
-        github: null,
-        screenshots: loadImage('satfleet', 'screenshots'),
-        description: `
-            Fleet management platform that enable us to monitor vehicles in real time on Map view, 
-            tracking the hardware status and control them remotely using IOT Technology.  
-        `,
-        hidden: false,
-    },
-    {
         logo: loadImage('caftan-ahlam', 'logo'),
         status: ProjectStatus.Ceased,
         name: 'Caftan Ahlam',
@@ -132,6 +132,30 @@ export const projects = [
             The code was in PHP and structured following MVC pattern. 
             Thanks to Bootstrap library for building the UI components quickly.
             regarding to payment we handled the translations using PayPal payment gateway and the final product deployed inside shared hasted. 
+        `,
+        hidden: false,
+    },
+    {
+        logo: loadImage('franni', 'logo'),
+        name: 'Franni',
+        technologies: [Technologies.Flutter, Technologies.HiveDB],
+        color: '#607D8B',
+        github: 'https://github.com/bmamatahir/franni',
+        screenshots: loadImage('franni', 'screenshots'),
+        description: `
+            The easiest and efficient way to note answers for driving school lessons 🚗
+        `,
+    },
+    {
+        logo: loadImage('jood', 'logo'),
+        name: 'Jood',
+        technologies: [Technologies.Flutter, Technologies.Firebase, Technologies.GoogleMaps],
+        color: '#01317D',
+        github: 'https://github.com/bmamatahir/jood',
+        screenshots: loadImage('jood', 'screenshots'),
+        description: `
+            The app users can signal a homeless and identify their locations, then the app notifies their volunteers and provides them with a detailed report about homeless needs. 
+            Briefly, the app act as a bridge between the homeless and volunteers
         `,
         hidden: false,
     },

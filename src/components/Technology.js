@@ -28,6 +28,9 @@ export const Technologies = {
     IoT: {label: 'IoT', color: '#57514F'},
     PayPal: {label: 'PayPal', color: '#002E82'},
     Docker: {label: 'Docker', color: '#1993EF'},
+    Firebase: {label: 'Firebase', color: '#F4C43D'},
+    AlpineJs: {label: 'AlpineJs', color: '#9CC6D1'},
+    HiveDB: {label: 'Hive', color: '#F5E720'},
 
 
     /* Programing Languages */
