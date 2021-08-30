@@ -14,7 +14,6 @@ export const projects = [
         name: 'Spotbusiness',
         visitLink: 'https://spotbusiness.ma',
         technologies: [Technologies.Laravel, Technologies.Livewire,  Technologies.AlpineJs, Technologies.Odoo, Technologies.CMI],
-        github: null,
         color: '#3c57e0',
         description: `
             E-commerce rental subscriptions application for a business center, composed from tree layers website, Client portal and Admin panel.
@@ -23,7 +22,6 @@ export const projects = [
             I built and maintained the app from idea to production. In addition, The website respects SEO norms to generate the traffic and well recognized in search engine.
         `,
         screenshots: loadImage('spotbusiness', 'screenshots'),
-        hidden: false,
     },
     {
         logo: loadImage('spotfit', 'logo'),
@@ -31,14 +29,12 @@ export const projects = [
         name: 'Spotfit',
         technologies: [Technologies.Angular, Technologies.Laravel, Technologies.Ionic, Technologies.Cordova],
         color: '#DDBCFF',
-        github: null,
         screenshots: loadImage('spotfit', 'screenshots'),
         description: `
             Platform where each member has his own customizable application (client, gym owner, admin), plus a brochure website.
             The application allows customers to explore gyms and pay passes with multiple methods of payment. 
             The app is hybrid and the code has been written inside Angular framework and wrapped withing a Cordova webview to target multiple platform especially Android and IOS systems.  
         `,
-        hidden: false,
     },
     {
         logo: loadImage('spotbills', 'logo'),
@@ -46,14 +42,12 @@ export const projects = [
         name: 'Spotbills',
         visitLink: 'https://spotbills.com',
         technologies: [Technologies.Angular, Technologies.ThreeJs, Technologies.RxJs],
-        github: null,
         color: '#FFCD65',
         description: `
             A static website describe the company products and services in creative manner with the power of Three.js. 
             We developed a 3D world and a smart smooth UX, and we toke advantage of Angular as front-end to enhance user interactivity and website performance.
         `,
         screenshots: loadImage('spotbills', 'screenshots'),
-        hidden: false,
     },
     {
         logo: loadImage('peer', 'logo'),
@@ -61,14 +55,12 @@ export const projects = [
         name: 'Peer',
         technologies: [Technologies.Flutter, Technologies.WebRTC, Technologies.NodeJs, Technologies.MongoDB, Technologies.SocketIO],
         color: '#708DE9',
-        github: null,
         screenshots: require('../assets/projects/peer-screenshots.jpg').default,
         description: `
               Decentralized instant messaging app built on top of Flutter framework, 
               using webRTC technology for P2P to perform Video/Audio calls, with high intention to security, considering the data transmission are totally 
               E2E encryption and powered by AI.
         `,
-        hidden: false,
     },
     {
         logo: loadImage('opentech', 'logo'),
@@ -77,14 +69,12 @@ export const projects = [
         visitLink: 'https://opentech.ma',
         technologies: [Technologies.WordPress, Technologies.AJAX, Technologies.Bootstrap],
         color: '#F08219',
-        github: null,
         screenshots: loadImage('opentech', 'screenshots'),
         description: `
             Brochure website where the company expose its products and services with beautiful design and new look to the digital market.
             This artwork powered by Wordpress, with intensive customizations in the theme made by us. 
             The website raise reputation of the company and make it more accessible throughout the internet.
         `,
-        hidden: false,
     },
     {
         logo: loadImage('satfleet', 'logo'),
@@ -93,13 +83,11 @@ export const projects = [
         visitLink: 'https://www.satfleet.ma/',
         technologies: [Technologies.PHP, Technologies.Javascript, Technologies.NodeJs, Technologies.GoogleMaps, Technologies.IoT],
         color: '#252A38',
-        github: null,
         screenshots: loadImage('satfleet', 'screenshots'),
         description: `
             Fleet management platform that enable us to monitor vehicles in real time on Map view, 
             tracking the hardware status and control them remotely using IOT Technology.  
         `,
-        hidden: false,
     },
     {
         logo: loadImage('OMS', 'logo'),
@@ -108,7 +96,6 @@ export const projects = [
         visitLink: 'http://alpha.opentech.codes:1111/',
         technologies: [Technologies.Angular, Technologies.Laravel, Technologies.AngularMaterialUI, Technologies.Docker],
         color: '#252A38',
-        github: null,
         screenshots: loadImage('OMS', 'screenshots'),
         description: `
             The new generation of the company's internal management system. 
@@ -117,7 +104,6 @@ export const projects = [
             the app was a SPA consumes an external API and we secured the communication using JWT.
             When it comes to deployment the app components was isolated into Docker containers.  
         `,
-        hidden: false,
     },
     {
         logo: loadImage('caftan-ahlam', 'logo'),
@@ -125,7 +111,6 @@ export const projects = [
         name: 'Caftan Ahlam',
         technologies: [Technologies.PHP, Technologies.Javascript, Technologies.Bootstrap, Technologies.HTML5, Technologies.PayPal],
         color: '#E70978',
-        github: null,
         screenshots: loadImage('caftan-ahlam', 'screenshots'),
         description: `
             E-commerce website for selling traditional moroccan clothes. 
@@ -133,7 +118,6 @@ export const projects = [
             Thanks to Bootstrap library for building the UI components quickly.
             regarding to payment we handled the translations using PayPal payment gateway and the final product deployed inside shared hasted. 
         `,
-        hidden: false,
     },
     {
         logo: loadImage('franni', 'logo'),
@@ -157,6 +141,5 @@ export const projects = [
             The app users can signal a homeless and identify their locations, then the app notifies their volunteers and provides them with a detailed report about homeless needs. 
             Briefly, the app act as a bridge between the homeless and volunteers
         `,
-        hidden: false,
     },
 ]
