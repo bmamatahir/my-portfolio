@@ -12,7 +12,7 @@ const Projects = (props) => {
     var settings = {
         dots: true,
         speed: 200,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 2500,
         slidesToShow: 2,
         slidesToScroll: 1,
         centerMode: true,
