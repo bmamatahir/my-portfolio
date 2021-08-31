@@ -9,7 +9,8 @@ import {
     DiMysql,
     DiPostgresql,
     DiSqllite,
-    FaDocker, FaGitAlt,
+    FaDocker,
+    FaGitAlt,
     FaPhp,
     FaReact,
     FaWordpress,
@@ -22,7 +23,8 @@ import {
     IoLogoIonic,
     IoLogoJavascript,
     IoLogoLaravel,
-    IoLogoNodejs, IoLogoPwa,
+    IoLogoNodejs,
+    IoLogoPwa,
     IoLogoPython,
     IoLogoVue,
     RiFlutterFill,
@@ -65,7 +67,7 @@ export const Technologies = {
     Bootstrap: new Skill('Bootstrap', '#6E12EF', (props) => <BsFillBootstrapFill {...props}/>),
     Tailwind: new Skill('Tailwind', '#0CA4B2', (props) => <SiTailwindcss {...props}/>),
     React: new Skill('React', '#48CEF7', (props) => <FaReact {...props}/>),
-    CMI: new Skill('CMI Payment gateway', '#EE4230', (props) => <BiPackage {...props}/>),
+    CMI: new Skill('CMI Payment', '#EE4230', (props) => <BiPackage {...props}/>),
     ThreeJs: new Skill('ThreeJs', '#403D7E', (props) => <BiCodeAlt {...props}/>),
     RxJs: new Skill('RxJs', '#A1008D', (props) => <BiCodeAlt {...props}/>),
     AJAX: new Skill('AJAX', '#0780C6', (props) => <BiCodeAlt {...props}/>),
@@ -99,10 +101,12 @@ export const Technologies = {
     SqLite: new Skill('SqLite', '#379BD9', (props) => <DiSqllite {...props}/>),
 };
 
-const Technology = ({label, color}) => {
+const Technology = ({label, color, icon}) => {
+    const setOpacity = (hex, alpha) => `${hex}${Math.floor(alpha * 255).toString(16).padStart(2, 0)}`;
+
     return (
-        <div className="rounded-full leading-none p-1 px-2 font-medium text-white inline-block opacity-60"
-             style={{backgroundColor: color}}> {label}</div>
+        <div className="rounded-full leading-none p-1 px-2 text-md font-medium inline-block flex items-center gap-1 border"
+             style={{backgroundColor: setOpacity(color, 0.1), color, borderColor: setOpacity(color, .2)}}>{icon()} {label}</div>
     );
 };
 
