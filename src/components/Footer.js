@@ -5,7 +5,7 @@ const Footer = (props) => {
 
  return (
   <div className="Footer py-6 text-center">
-      © {currentYear}, Built with ❤️ by Badr Mamatahir
+      © {currentYear}, Developed and designed with ❤️ by Badr Mamatahir
   </div>
  );
 };
