@@ -52,7 +52,7 @@ const Projects = (props) => {
                 <div className="container px-4 mx-auto flex flex-col gap-3 text-start mb-7">
                     <h3 className="text-4xl font-bold ">My Work</h3>
                     <p className="text-gray-500">This is a list of my current and previous projects of work. Use the
-                        menu below to see project titles and their statuses</p>
+                        menu below to see project titles.</p>
                 </div>
 
                 {/* Filters */}

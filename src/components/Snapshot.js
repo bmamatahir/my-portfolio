@@ -1,4 +1,4 @@
-import avatar from './avatar.jpg';
+import avatar from '../assets/me.jpg';
 import FindMe from './FindMe';
 import {useEffect, useRef} from "react";
 import Typed from 'typed.js';
