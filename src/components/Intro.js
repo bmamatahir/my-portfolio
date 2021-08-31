@@ -1,5 +1,6 @@
 import {React, useEffect} from 'react';
 import Snapshot from "./Snapshot";
+import Logo from "../assets/logo.png";
 
 const Intro = (props) => {
     useEffect(() => {
@@ -17,6 +18,9 @@ const Intro = (props) => {
 
     return (
         <div id="fancy-bg" className="text-white h-screen relative overflow-hidden">
+            <div className="bg-white rounded-full w-16 h-16 py-1 absolute left-1/2 transform -translate-x-1/2 mt-5 over">
+                <img src={Logo} alt="Logo" />
+            </div>
             <div className="absolute top-1/2 left-1/2 transform  -translate-y-1/2 -translate-x-1/2">
                 <Snapshot/>
             </div>

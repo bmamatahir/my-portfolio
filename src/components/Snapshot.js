@@ -13,9 +13,9 @@ const Snapshot = () => {
     useEffect(() => {
         const options = {
             strings: [
-                'Laravel',
-                'Angular',
-                'Flutter'
+                'Front End',
+                'Back End',
+                'Mobile'
             ],
             typeSpeed: 50,
             backSpeed: 50,
