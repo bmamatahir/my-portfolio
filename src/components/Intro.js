@@ -1,6 +1,7 @@
 import {React, useEffect} from 'react';
 import Snapshot from "./Snapshot";
 import Logo from "../assets/logo.png";
+import FindMe from "./FindMe";
 
 const Intro = (props) => {
     useEffect(() => {
@@ -23,6 +24,10 @@ const Intro = (props) => {
             </div>
             <div className="absolute top-1/2 left-1/2 transform  -translate-y-1/2 -translate-x-1/2">
                 <Snapshot/>
+            </div>
+
+            <div className="absolute bottom-4 left-1/2 transform  -translate-y-1/2 -translate-x-1/2 bg-black p-2 px-3 shadow-lg rounded-lg bg-opacity-50">
+                <FindMe/>
             </div>
         </div>
     );

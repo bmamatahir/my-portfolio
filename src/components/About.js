@@ -5,17 +5,17 @@ import avatar from '../assets/me.jpg'
 
 const About = (props) => {
     return (
-        <div className="About" style={{background: 'linear-gradient(black , rgb(209 213 219))'}}>
+        <div className="About">
             <div className="container px-4 py-8 md:py-20 mx-auto grid md:grid-cols-2 gap-8 items-center">
                 <div className="justify-self-end hidden md:block">
                     <img src={avatar}/>
                 </div>
                 <div>
-                    <h3 className="text-4xl font-bold mb-8 text-white">⚡ About <span className="text-yellow-400">Me</span></h3>
+                    <h3 className="text-4xl font-bold mb-8">⚡ About <span className="text-yellow-400">Me</span></h3>
                     <div className="justify-self-end block md:hidden  mr-4 w-2/5 float-left">
                         <img src={avatar} className="rounded"/>
                     </div>
-                    <p className="text-white">
+                    <p className="text-gray-800 text-justify">
                         <p className="mb-3">I'm a full-stack developer at spotbills startup based in marina Casablanca,
                             where I build native and hybrid applications that target web and mobile platforms. I'm graduated with a bachelor degree in computer science and I have 3+ years of experience.</p>
                         <p className="mb-3">I've enjoyed writing clean code, that humans and machines can understand.

@@ -39,11 +39,13 @@ const Snapshot = () => {
             <img src={avatar} alt="avatar"
                  className={" w-28 h-28 mb-4 rounded-full ring-2 ring-yellow-500 ring-opacity-50 p-1"}/>
 
+            <div className="introduce mb-3 text-center">
+                <div>Hey there 👋! I'm-</div>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center "> <span className="text-yellow-300">Badr Mamatahir.</span></h2>
+            </div>
 
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold py-3 text-center ">Hi 👋, I'm Badr Mamatahir</h2>
-
-            <div className={"pl-2 inline-block  p-2 bg-black gradient-border"}>
-                <h1 className="text-md whitespace-nowrap">I'm <span className="font-bold" style={{ whiteSpace: 'pre' }} ref={el} />developer</h1>
+            <div className={"pl-2 inline-block  p-2 bg-black text-center w-52 gradient-border bg-opacity-50 rounded-full"}>
+                <h1 className="text-md whitespace-nowrap"><span className="font-bold" style={{ whiteSpace: 'pre' }} ref={el} /> Developer</h1>
             </div>
 
             <p className={"my-3 text-gray-300 text-center"}> I design
@@ -51,7 +53,6 @@ const Snapshot = () => {
                 businesses.</p>
 
 
-            <FindMe/>
         </div>
     );
 }

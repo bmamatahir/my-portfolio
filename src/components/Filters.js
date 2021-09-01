@@ -22,7 +22,7 @@ const Filters = ({projects, onChange}) => {
             <fieldset disabled={criteria.opensourced}>
                 <div className="flex items-center">
                     <label className="mr-2" htmlFor="menu">Menu</label>
-                    <select id="menu" onChange={chooseProject} value={criteria.project}>
+                    <select id="menu" onChange={chooseProject} value={criteria.project} className="w-32">
                         <option value="" selected>All</option>
                         {projects.map((p, i) => <option value={p.name}>{p.name}</option>)}
                     </select>
