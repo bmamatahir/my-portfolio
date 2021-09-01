@@ -1,5 +1,4 @@
 import avatar from '../assets/me-again.jpg';
-import FindMe from './FindMe';
 import {useEffect, useRef} from "react";
 import Typed from 'typed.js';
 
@@ -45,12 +44,12 @@ const Snapshot = () => {
             </div>
 
             <div className={"pl-2 inline-block  p-2 bg-black text-center w-52 gradient-border bg-opacity-50 rounded-full"}>
-                <h1 className="text-md whitespace-nowrap"><span className="font-bold" style={{ whiteSpace: 'pre' }} ref={el} /> Developer</h1>
+                <div className="text-md whitespace-nowrap"><span className="font-bold" style={{ whiteSpace: 'pre' }} ref={el} /> Developer</div>
             </div>
 
-            <p className={"my-3 text-gray-300 text-center"}> I design
+            <h1 className={"my-3 text-gray-300 text-center"}> I design
                 and develop web and mobile apps for startups, small and medium
-                businesses.</p>
+                businesses.</h1>
 
 
         </div>

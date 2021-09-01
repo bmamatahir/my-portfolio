@@ -2,14 +2,13 @@ import React, {useState, useEffect} from 'react';
 
 const AutoScrollingBackground = ({src}) => {
     let [yPos, setYPos] = useState(0);
-    let ref = null;
 
     useEffect(function(){
         let img = new Image();
         img.src = src;
         img.onload = () =>{
             if(img.height > 350)
-                ref = setInterval(()=> {
+                setInterval(()=> {
                     setYPos(++yPos)
                 }, 100)
         };
@@ -18,7 +17,7 @@ const AutoScrollingBackground = ({src}) => {
     },[])
 
     function stopAnimation() {
-        clearInterval(ref)
+
     }
 
     return (

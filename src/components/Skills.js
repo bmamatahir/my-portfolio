@@ -64,6 +64,14 @@ const Skills = (props) => {
         },
     ];
 
+    Object.defineProperty(Array.prototype, 'flat', {
+        value: function(depth = 1) {
+            return this.reduce(function (flat, toFlatten) {
+                return flat.concat((Array.isArray(toFlatten) && (depth>1)) ? toFlatten.flat(depth-1) : toFlatten);
+            }, []);
+        }
+    });
+
     return (
         <div className="Skills bg-yellow-400 pt-20 pb-52">
             <div className="container mx-auto px-4">

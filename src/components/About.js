@@ -8,12 +8,12 @@ const About = (props) => {
         <div className="About">
             <div className="container px-4 py-8 md:py-20 mx-auto grid md:grid-cols-2 gap-8 items-center">
                 <div className="justify-self-end hidden md:block">
-                    <img src={avatar}/>
+                    <img src={avatar} alt="Badr Mamatahir profile"/>
                 </div>
                 <div>
                     <h3 className="text-4xl font-bold mb-8">⚡ About <span className="text-yellow-400">Me</span></h3>
                     <div className="justify-self-end block md:hidden  mr-4 w-2/5 float-left">
-                        <img src={avatar} className="rounded"/>
+                        <img src={avatar} className="rounded" alt="Badr Mamatahir profile"/>
                     </div>
                     <p className="text-gray-800 text-justify">
                         <p className="mb-3">I'm a full-stack developer at spotbills startup based in marina Casablanca,

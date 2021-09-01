@@ -54,7 +54,7 @@ const ProjectCard = (props) => {
                             <h1 className="font-bold text-lg">{name}</h1>
                             {
                                 visitLink &&
-                                <a href={visitLink} target="_blank">
+                                <a href={visitLink} target="_blank" rel="noreferrer">
                                     <FiExternalLink color="#547bd2"/>
                                 </a>
                             }
@@ -77,7 +77,7 @@ const ProjectCard = (props) => {
                     {/*Github*/}
                     {github &&
                     <div className="absolute bottom-3 right-3 opacity-30 sm:hidden">
-                        <a href={github} target="_blank"><AiFillGithub size={30}/></a>
+                        <a href={github} target="_blank" rel="noreferrer"><AiFillGithub size={30}/></a>
                     </div>
                     }
 
@@ -95,7 +95,7 @@ const ProjectCard = (props) => {
                 {/*Github*/}
                 {github &&
                 <div className="absolute bottom-3 right-3 hidden sm:block bg-black p-1 rounded-full bg-opacity-50">
-                    <a href={github} target="_blank"><AiFillGithub size={30} color="white"/></a>
+                    <a href={github} target="_blank" rel="noreferrer"><AiFillGithub size={30} color="white"/></a>
                 </div>
                 }
             </div>
