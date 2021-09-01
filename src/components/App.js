@@ -5,6 +5,7 @@ import Projects from "./Projects";
 import About from "./About";
 import Skills from "./Skills";
 import Footer from "./Footer";
+import CallToAction from "./CallToAction";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <About/>
             <Projects/>
             <Skills/>
+            <CallToAction/>
             <Footer/>
         </div>
     );

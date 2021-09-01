@@ -65,11 +65,11 @@ const Skills = (props) => {
     ];
 
     return (
-        <div className="Skills bg-yellow-400 py-20">
+        <div className="Skills bg-yellow-400 pt-20 pb-52">
             <div className="container mx-auto px-4">
                 <div className="grid gap-3 mb-16">
                     <h3 className="text-4xl font-bold ">🔨 Technical Skills</h3>
-                    <p className="text-white">Startup businesses pushed me to play with various technologies
+                    <p className="text-white">Startup businesses pushed me to touch in various technologies
                         stack. I listed below my work equipment that i feel more comfortable with.</p>
                 </div>
 
