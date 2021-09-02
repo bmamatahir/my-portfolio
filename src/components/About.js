@@ -21,14 +21,14 @@ const About = (props) => {
                         <p className="mb-3">I've enjoyed writing clean code, that humans and machines can understand.
                             that's why I give high priority to design patterns in the self-learning process, I'm also
                             addicted to solving problems and read about algorithms, to keep this part of me
-                            alive. I track my effort in that aspect on <Link link={links.codinGame} name="Codingame" dark={true}/> .
+                            alive. I track my effort in that aspect on <Link external={true} link={links.codinGame} dark={true}>Codingame</Link> .
                         </p>
                         <p className="mb-3">And to keep me up-to-date about the digital world, I push myself to
                             participate in many events with various topics (AI, machine learning, Networking) and
                             contribute inside projects. Until now I open-sourced two projects both are available in
-                            my <Link link={links.github} dark={true}>GitHub profile</Link>.</p>
+                            my <Link external={true} link={links.github} dark={true}>GitHub profile</Link>.</p>
                         <p className="mb-3">I'm have been volunteering in charity for non-profit organizations such
-                            as <Link link={links.jood} dark={true}>Jood</Link> part-time to help people in need. For anybody who
+                            as <Link external={true} link={links.jood} dark={true}>Jood</Link> part-time to help people in need. For anybody who
                             carries any business idea that serves this aspect, I'm ready to share my knowledge and
                             expertise for free.</p>
                         <p className="mb-3">Besides coding, photography and drawing are my hobbies.</p>
