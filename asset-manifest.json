@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4dc8d4f2.chunk.css",
+    "main.js": "/static/js/main.b0b10721.chunk.js",
+    "main.js.map": "/static/js/main.b0b10721.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ca316c5f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ca316c5f.js.map",
+    "static/css/2.bbbe21ee.chunk.css": "/static/css/2.bbbe21ee.chunk.css",
+    "static/js/2.8811894c.chunk.js": "/static/js/2.8811894c.chunk.js",
+    "static/js/2.8811894c.chunk.js.map": "/static/js/2.8811894c.chunk.js.map",
+    "static/js/3.a5174b2a.chunk.js": "/static/js/3.a5174b2a.chunk.js",
+    "static/js/3.a5174b2a.chunk.js.map": "/static/js/3.a5174b2a.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.bbbe21ee.chunk.css.map": "/static/css/2.bbbe21ee.chunk.css.map",
+    "static/css/main.4dc8d4f2.chunk.css.map": "/static/css/main.4dc8d4f2.chunk.css.map",
+    "static/js/2.8811894c.chunk.js.LICENSE.txt": "/static/js/2.8811894c.chunk.js.LICENSE.txt",
+    "static/media/OMS-screenshots.jpg": "/static/media/OMS-screenshots.cf6a3607.jpg",
+    "static/media/caftan-ahlam-screenshots.jpg": "/static/media/caftan-ahlam-screenshots.18061f1c.jpg",
+    "static/media/franni-screenshots.jpg": "/static/media/franni-screenshots.91049549.jpg",
+    "static/media/jood-screenshots.jpg": "/static/media/jood-screenshots.2ef33cc6.jpg",
+    "static/media/logo.3ac17870.png": "/static/media/logo.3ac17870.png",
+    "static/media/me-again.0675d802.jpg": "/static/media/me-again.0675d802.jpg",
+    "static/media/me.3f5194dd.jpg": "/static/media/me.3f5194dd.jpg",
+    "static/media/opentech-screenshots.jpg": "/static/media/opentech-screenshots.1fcef358.jpg",
+    "static/media/peer-screenshots.jpg": "/static/media/peer-screenshots.4b2da908.jpg",
+    "static/media/satfleet-screenshots.jpg": "/static/media/satfleet-screenshots.9c84d112.jpg",
+    "static/media/index.css": "/static/media/slick.c94f7671.ttf",
+    "static/media/spotbills-screenshots.jpg": "/static/media/spotbills-screenshots.824acc46.jpg",
+    "static/media/spotbusiness-screenshots.jpg": "/static/media/spotbusiness-screenshots.a380c788.jpg",
+    "static/media/spotfit-screenshots.jpg": "/static/media/spotfit-screenshots.313e0c8c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca316c5f.js",
+    "static/css/2.bbbe21ee.chunk.css",
+    "static/js/2.8811894c.chunk.js",
+    "static/css/main.4dc8d4f2.chunk.css",
+    "static/js/main.b0b10721.chunk.js"
+  ]
+}
