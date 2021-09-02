@@ -105,7 +105,7 @@ const Technology = ({label, color, icon}) => {
     const setOpacity = (hex, alpha) => `${hex}${Math.floor(alpha * 255).toString(16).padStart(2, 0)}`;
 
     return (
-        <div className="rounded-full leading-none p-1 px-2 text-md font-medium inline-block flex items-center gap-1 border"
+        <div className="rounded-full leading-none p-1 px-1 md:px-2 text-xs md:text-sm lg:text-base font-medium inline-block flex items-center gap-1 border"
              style={{backgroundColor: setOpacity(color, 0.1), color, borderColor: setOpacity(color, .2)}}>{icon()} {label}</div>
     );
 };

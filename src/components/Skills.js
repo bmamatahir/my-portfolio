@@ -81,7 +81,7 @@ const Skills = (props) => {
                         stack. I listed below my work equipment that i feel more comfortable with.</p>
                 </div>
 
-                <div className="flex gap-4 flex-wrap">
+                <div className="inline-flex gap-4 flex-wrap justify-center">
                     {
                         techSkills.map(s => [
                             <SkillCategory key={Math.random()} icon={s.icon}>{s.name}</SkillCategory>,

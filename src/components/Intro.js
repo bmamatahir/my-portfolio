@@ -26,7 +26,7 @@ const Intro = (props) => {
                 <Snapshot/>
             </div>
 
-            <div className="absolute bottom-4 left-1/2 transform  -translate-y-1/2 -translate-x-1/2 bg-black p-2 px-3 shadow-lg rounded-lg bg-opacity-50">
+            <div className="absolute bottom-8 md:bottom-4 left-1/2 transform  -translate-y-1/2 -translate-x-1/2 bg-black p-2 px-3 shadow-lg rounded-lg bg-opacity-50">
                 <FindMe/>
             </div>
         </div>

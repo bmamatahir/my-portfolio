@@ -37,8 +37,8 @@ const ProjectCard = (props) => {
             <div className="col-span-3 sm:col-span-2 overflow-hidden">
                 <div className="p-5 flex flex-col gap-3 h-full bg-white relative">
                     {
-                        !github && <div className="absolute  top-0 right-8">
-                            <Budge {...status}/>
+                        !github && <div className="absolute  top-0 right-0 md:right-8">
+                            <Budge {...status} classes="rounded-bl-lg md:rounded-b-lg"/>
                         </div>
                     }
 
@@ -60,7 +60,7 @@ const ProjectCard = (props) => {
                             }
 
                         </div>
-                        <p className="leading-tight text-gray-600">
+                        <p className="leading-tight text-gray-600 text-justify lg:text-left">
                             {description.substr(0, collapsed ? descLen: description.length)}
                             { longDesc && collapsed &&  <span>...</span>}
                             {longDesc && <span className="text-blue-600 hover:text-blue-400 font-semibold cursor-pointer" onClick={toggleReadMore}>[{ collapsed ? 'More' : 'Less'}]</span>}

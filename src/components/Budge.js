@@ -8,9 +8,9 @@ export const ProjectStatus = {
     Planning: {label: 'Planning', color: '#4B0082'},
 };
 
-const Budge = ({label, color}) => {
+const Budge = ({label, color, classes = ''}) => {
     return (
-        <div className="pt-8 pb-2 px-2 font-medium text-white rounded-b-lg" style={{backgroundColor: color}}>
+        <div className={"pt-8 pb-2 px-2 font-medium text-white "+classes} style={{backgroundColor: color}}>
             {label}
         </div>
     );
